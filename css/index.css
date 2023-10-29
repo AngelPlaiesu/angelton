@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+main header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main header a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main .container {
+  width: 90%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+main .container .panel {
+  width: 100%;
+  min-height: 700px;
+  background-image: url("../img/pexels-tima-miroshnichenko-5453848.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container .panel h1 {
+  font-size: 5rem;
+  color: aliceblue;
+}
+
+main .container [class^="info-panel"] {
+  text-align: left;
+}
+main .container [class^="info-panel"] h2 {
+  width: 45%;
+  margin: 0 auto;
+}
+main .container [class^="info-panel-"] h2 a {
+  color: blue;
+  text-decoration: none;
+}
+main .container [class^="info-panel"] p {
+  width: 35%;
+  margin: 2rem auto;
+}
+
+main .photo-panel-one {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+main .photo-panel-one div {
+  width: 100%;
+  flex: 1;
+}
+
+main .photo-panel-one .offset-div {
+  background-image: url(../img/pexels-muhammadtaha-ibrahim-3310871.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 35vw;
+  position: relative;
+  right: -4vw;
+}
+
+main .photo-panel-one .art-bg {
+  flex: 1;
+  height: 45vw;
+  background-color: #fbffa7;
+  display: flex;
+  align-items: center;
+  padding: 4vw;
+  box-sizing: border-box;
+}
+
+main .photo-panel-one .art-bg div {
+  background-image: url(../img/pexels-josh-sorenson-154147.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 25vw;
+  content: ".";
+  margin-left: 3vw;
+}
+
+main .container [class^="video-container"] {
+  width: 100%;
+  text-align: center;
+}
+
+main .container .video-container video {
+  width: 75%;
+}
+
+
+main .photo-panel-two {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+main  .photo-panel-two .bg-lime{
+  width: 50vw;
+  height: 75vw;
+  background-color: #b6ffc0;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+main  .photo-panel-two .colum {
+  height: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  box-sizing: border-box;
+  padding: 5rem 0;
+  gap: 5rem;
+}
+main  .photo-panel-two .colum img{
+  max-width: 100%;
+  height: 45%;
+  object-fit: scale-down;
+  flex: 1;
+}
+
+main  .photo-panel-two .photo-3 {
+  height: 100%;
+  width: 50vw;
+  text-align: left;
+
+}
+main  .photo-panel-two .photo-3 img {
+  height: 65vw;
+  max-width: 100%;
+  width: auto;
+  position: relative;
+  right: 4vw;
+}
+
+main  .video-container-2 video {
+  width: 100%;
+}
+
+main  .photo-panel-three {
+  width: 100vw;
+  height: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 5rem 0;
+}
+main  .photo-panel-three span {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+main  .photo-panel-three span img {
+  width: 75%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+main  .photo-panel-three .bg-lili {
+  height: 35vw;
+  width: 50vw;
+  position: absolute;
+  z-index: -1;
+  background-color: #d5b3ff;
+}
+
+main .container .tile-panel {
+  width: 100%;
+  height: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+main .container .tile-panel * {
+  width: 100%;
+  flex: 1;
+  height: 100%;
+}
+main .container .tile-panel span {
+  width: 100%;
+}
+main .container .tile-panel span img {
+  width: 100%;
+  height: auto;
+  max-height: 99%;
+  object-fit: scale-down;
+}
+
+main .container .tile-panel div {
+  background-color: cadetblue;
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+main .container .tile-panel div h2{
+  height: fit-content;
+  width: 100%;
+}
+main .container .tile-panel div a{
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+main .container .tile-panel div a::after{
+  content: ">";
+}
